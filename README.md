@@ -9,7 +9,7 @@ The construction uses purification. First, diagonalize $\rho = \sum_i \lambda_i 
 Then prepare the pure state
 $|\Psi\rangle = \sum_i \sqrt{\lambda_i}\, |e_i\rangle |i\rangle.$
 If the second register is measured and the outcome is ignored, the first register has density matrix $\rho$. Equivalently, measurements of an observable $\mathcal{O}$ on the first register have expectation
-$\sum_i \lambda_i \langle e_i|\mathcal O|e_i\rangle=\operatorname{Tr}(\mathcal O\rho)$.
+$\sum_i \lambda_i \langle e_i|\mathcal O|e_i\rangle=\text{Tr}(\mathcal O\rho)$.
 
 ## Implementation
 
