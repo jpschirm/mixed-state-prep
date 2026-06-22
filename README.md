@@ -1,4 +1,5 @@
 # Mixed Quantum State Preparation
+
 Given a $2^n \times 2^n$ density matrix $\rho$ construct a Qiskit circuit with measurements that prepares $\rho$.
 The main implementation is in `mixed-state-prep.ipynb`.
 ## Idea
@@ -6,11 +7,9 @@ The construction uses purification. First, diagonalize $\rho = \sum_i \lambda_i 
 Then prepare the pure state
 $|\Psi\rangle = \sum_i \sqrt{\lambda_i}\, |e_i\rangle |i\rangle.$
 If the second register is measured and the outcome is ignored, the first register has density matrix $\rho$. Equivalently, measurements of an observable $\mathcal{O}$ on the first register have expectation
-$$
-\sum_i \lambda_i \langle e_i|\mathcal O|e_i\rangle
+$\sum_i \lambda_i \langle e_i|\mathcal O|e_i\rangle
 =
-\operatorname{Tr}(\mathcal O\rho).
-$$
+\operatorname{Tr}(\mathcal O\rho).$
 ## Implementation
 The notebook contains:
 - a QROM-based diagonal unitary construction;
