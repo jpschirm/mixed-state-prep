@@ -20,7 +20,7 @@ The notebook contains:
 - verification code for pure-state and mixed-state preparation;
 - a demo for $n=2$.
 
-The pure-state routine first prepares the non-negative amplitudes using multiplexed $R_y$ rotations, then adds phases using a diagonal unitary. The code uses Qiskit convenience gates such as `mcry` and `mcx`; these represent multiplexed rotations and bit-string selection operations discussed in lecture and can be decomposed into one-qubit gates and multiplexed $Z$-type operations.
+The pure-state routine first prepares the non-negative amplitudes using multiplexed $R_y$ rotations, then adds phases using a diagonal unitary. The code uses Qiskit convenience gates such as `mcry` and `mcx`; these represent multiplexed rotations and bit-string selection operations and can be decomposed into one-qubit gates and multiplexed $Z$-type operations.
 
 ## How to Run
 
